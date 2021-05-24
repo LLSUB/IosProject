@@ -9,18 +9,8 @@ import SwiftUI
 
 struct MainContentView: View {
     
-    @State
-    private var choosedTab: String = "전체"
-    
     @State var showingTipPopup: Bool = false
     @State var showingHamPopup: Bool = false
-    
-    private let ViewList = [
-        "전체",
-        "배터리",
-        "형광등",
-        "쓰레기"
-    ]
     
     var body: some View {
         
