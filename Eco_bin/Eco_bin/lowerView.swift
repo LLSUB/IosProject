@@ -8,6 +8,7 @@
 import SwiftUI
 import ExytePopupView
 
+// lower hamburger button and tip button
 struct lowerView: View {
 
     @State var showingAskPopup: Bool = false

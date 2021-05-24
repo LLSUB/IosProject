@@ -12,11 +12,14 @@ struct MainContentView: View {
     @State var showingTipPopup: Bool = false
     @State var showingHamPopup: Bool = false
     
+    @State
+    private var choosedTab: String = "전체"
+
     var body: some View {
         
         NavigationView{
             ZStack{
-                FilterContentView(showingTipPopup: $showingTipPopup, showingHamPopup: $showingHamPopup)
+                FilterContentView(showingTipPopup: $showingTipPopup, showingHamPopup: $showingHamPopup, choosedTab: $choosedTab)
                 
                 BackgroundFilterView(showingTipPopup: $showingTipPopup, showingHamPopup: $showingHamPopup)
                 

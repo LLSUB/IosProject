@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// If showingPopup, Background turn off
 struct BackgroundFilterView: View {
     
     @Binding var showingTipPopup: Bool

@@ -7,18 +7,21 @@
 
 import SwiftUI
 
+// Upper menu filtering
 struct FilterContentView: View {
     
     @Binding var showingTipPopup: Bool
     @Binding var showingHamPopup: Bool
-    init(showingTipPopup: Binding<Bool> = .constant(true), showingHamPopup: Binding<Bool> = .constant(true)){
+    @Binding var choosedTab: String
+    init(showingTipPopup: Binding<Bool> = .constant(true), showingHamPopup: Binding<Bool> = .constant(true), choosedTab:Binding<String> = .constant("전체")){
         _showingTipPopup = showingTipPopup
         _showingHamPopup = showingHamPopup
+        _choosedTab = choosedTab
     }
     
-    @State
-    private var choosedTab: String = "전체"
-    
+//    @State
+//    private var choosedTab: String = "전체"
+//
     private let ViewList = [
         "전체",
         "배터리",

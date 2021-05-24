@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Temp ContentView
 struct NextView: View {
     var body: some View {
         VStack() {
