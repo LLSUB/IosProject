@@ -174,7 +174,6 @@ struct lowerView: View {
                 .background(Color.green)
                 .cornerRadius(20)
             }
-//
         }
         .padding(.all, 10)
         .frame(width: 380, height: 760)

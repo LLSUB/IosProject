@@ -12,8 +12,7 @@ struct MainContentView: View {
     @State var showingTipPopup: Bool = false
     @State var showingHamPopup: Bool = false
     
-    @State
-    private var choosedTab: String = "전체"
+    @State private var choosedTab: String = "전체"
 
     var body: some View {
         
