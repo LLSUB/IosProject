@@ -13,13 +13,18 @@
 		75DB3CE1265BF28A0058A26B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DB3CDF265BF28A0058A26B /* LaunchScreen.storyboard */; };
 		75DB3CF3265BF2FC0058A26B /* BackgroundFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3CEA265BF2FC0058A26B /* BackgroundFilterView.swift */; };
 		75DB3CF5265BF2FC0058A26B /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 75DB3CEC265BF2FC0058A26B /* Preview Content */; };
-		75DB3CF6265BF2FC0058A26B /* FilterContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3CED265BF2FC0058A26B /* FilterContentView.swift */; };
 		75DB3CF7265BF2FC0058A26B /* lowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3CEE265BF2FC0058A26B /* lowerView.swift */; };
 		75DB3CF8265BF2FC0058A26B /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3CEF265BF2FC0058A26B /* NextView.swift */; };
 		75DB3CF9265BF2FC0058A26B /* NotUsed in Resources */ = {isa = PBXBuildFile; fileRef = 75DB3CF0265BF2FC0058A26B /* NotUsed */; };
 		75DB3CFA265BF2FC0058A26B /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 75DB3CF1265BF2FC0058A26B /* Base.lproj */; };
 		75DB3D06265BF5330058A26B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DB3D05265BF5330058A26B /* Assets.xcassets */; };
 		75DB3D0B265BFA270058A26B /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3D0A265BFA270058A26B /* MainContentView.swift */; };
+		75DB3D14265D11A00058A26B /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3D13265D11A00058A26B /* FilterViewModel.swift */; };
+		75DB3D17265D14100058A26B /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3D16265D14100058A26B /* Filter.swift */; };
+		75DB3D1B265D26220058A26B /* AskPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3D1A265D26220058A26B /* AskPopupView.swift */; };
+		75DB3D1E265D27050058A26B /* TipPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3D1D265D27050058A26B /* TipPopupView.swift */; };
+		75DB3D21265D27CD0058A26B /* HamMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3D20265D27CD0058A26B /* HamMenuView.swift */; };
+		75DB3D46266512910058A26B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3D45266512910058A26B /* MapView.swift */; };
 		C1B7976FFCFC83C18329DAA1 /* Pods_Eco_bin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D80B667BDA0970CF8FE4F0 /* Pods_Eco_bin.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,13 +38,18 @@
 		75DB3CE2265BF28A0058A26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75DB3CEA265BF2FC0058A26B /* BackgroundFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundFilterView.swift; sourceTree = "<group>"; };
 		75DB3CEC265BF2FC0058A26B /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
-		75DB3CED265BF2FC0058A26B /* FilterContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterContentView.swift; sourceTree = "<group>"; };
 		75DB3CEE265BF2FC0058A26B /* lowerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lowerView.swift; sourceTree = "<group>"; };
 		75DB3CEF265BF2FC0058A26B /* NextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
 		75DB3CF0265BF2FC0058A26B /* NotUsed */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NotUsed; sourceTree = "<group>"; };
 		75DB3CF1265BF2FC0058A26B /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		75DB3D05265BF5330058A26B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75DB3D0A265BFA270058A26B /* MainContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		75DB3D13265D11A00058A26B /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		75DB3D16265D14100058A26B /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		75DB3D1A265D26220058A26B /* AskPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskPopupView.swift; sourceTree = "<group>"; };
+		75DB3D1D265D27050058A26B /* TipPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipPopupView.swift; sourceTree = "<group>"; };
+		75DB3D20265D27CD0058A26B /* HamMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamMenuView.swift; sourceTree = "<group>"; };
+		75DB3D45266512910058A26B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		96D80B667BDA0970CF8FE4F0 /* Pods_Eco_bin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eco_bin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B2B9DF032716F27CF6D0AF /* Pods-Eco_bin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco_bin.release.xcconfig"; path = "Target Support Files/Pods-Eco_bin/Pods-Eco_bin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,13 +87,17 @@
 		75DB3CD3265BF2870058A26B /* Eco_bin */ = {
 			isa = PBXGroup;
 			children = (
+				75DB3D23265D2C860058A26B /* Popup */,
 				75DB3CD4265BF2870058A26B /* AppDelegate.swift */,
 				75DB3CD6265BF2870058A26B /* SceneDelegate.swift */,
 				75DB3D05265BF5330058A26B /* Assets.xcassets */,
 				75DB3D0A265BFA270058A26B /* MainContentView.swift */,
-				75DB3CED265BF2FC0058A26B /* FilterContentView.swift */,
-				75DB3CEA265BF2FC0058A26B /* BackgroundFilterView.swift */,
+				75DB3D45266512910058A26B /* MapView.swift */,
+				75DB3D13265D11A00058A26B /* FilterViewModel.swift */,
+				75DB3D16265D14100058A26B /* Filter.swift */,
 				75DB3CEE265BF2FC0058A26B /* lowerView.swift */,
+				75DB3D20265D27CD0058A26B /* HamMenuView.swift */,
+				75DB3CEA265BF2FC0058A26B /* BackgroundFilterView.swift */,
 				75DB3CEF265BF2FC0058A26B /* NextView.swift */,
 				75DB3CF1265BF2FC0058A26B /* Base.lproj */,
 				75DB3CF0265BF2FC0058A26B /* NotUsed */,
@@ -101,6 +115,15 @@
 				75DB3CDD265BF28A0058A26B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		75DB3D23265D2C860058A26B /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				75DB3D1A265D26220058A26B /* AskPopupView.swift */,
+				75DB3D1D265D27050058A26B /* TipPopupView.swift */,
+			);
+			path = Popup;
 			sourceTree = "<group>";
 		};
 		D32A2C76B813E9214126ADCD /* Pods */ = {
@@ -238,11 +261,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DB3CD5265BF2870058A26B /* AppDelegate.swift in Sources */,
+				75DB3D46266512910058A26B /* MapView.swift in Sources */,
+				75DB3D1B265D26220058A26B /* AskPopupView.swift in Sources */,
+				75DB3D1E265D27050058A26B /* TipPopupView.swift in Sources */,
 				75DB3CD7265BF2870058A26B /* SceneDelegate.swift in Sources */,
-				75DB3CF6265BF2FC0058A26B /* FilterContentView.swift in Sources */,
+				75DB3D14265D11A00058A26B /* FilterViewModel.swift in Sources */,
 				75DB3CF8265BF2FC0058A26B /* NextView.swift in Sources */,
 				75DB3CF7265BF2FC0058A26B /* lowerView.swift in Sources */,
 				75DB3CF3265BF2FC0058A26B /* BackgroundFilterView.swift in Sources */,
+				75DB3D17265D14100058A26B /* Filter.swift in Sources */,
+				75DB3D21265D27CD0058A26B /* HamMenuView.swift in Sources */,
 				75DB3D0B265BFA270058A26B /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

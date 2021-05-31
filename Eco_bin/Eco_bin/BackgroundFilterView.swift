@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// If showingPopup, Background turn off
+// If showingPopup, Background become black a little bit
 struct BackgroundFilterView: View {
     
     @Binding var showingTipPopup: Bool

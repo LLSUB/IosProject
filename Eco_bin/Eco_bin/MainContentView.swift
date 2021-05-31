@@ -9,32 +9,65 @@ import SwiftUI
 
 struct MainContentView: View {
     
-    @State var showingTipPopup: Bool = false
-    @State var showingHamPopup: Bool = false
-    
-    @State private var choosedTab: String = "전체"
+    @ObservedObject var viewModel: FilterViewModel = FilterViewModel()
 
     var body: some View {
-        
         NavigationView{
             ZStack{
-                FilterContentView(showingTipPopup: $showingTipPopup, showingHamPopup: $showingHamPopup, choosedTab: $choosedTab)
                 
-                BackgroundFilterView(showingTipPopup: $showingTipPopup, showingHamPopup: $showingHamPopup)
+                // Background Map
+                MapView()
                 
-                lowerView(showingTipPopup: $showingTipPopup, showingHamPopup: $showingHamPopup)
+                // upper filter buttons
+                VStack{
+                    HStack{
+                        // 수정
+                        ForEach(viewModel.filters){ selected in
+                            filterbutton(filter:selected)
+                        }
+                        Spacer()
+                    }
+                    .padding(EdgeInsets(top: 60, leading: 30, bottom: 0, trailing: 0))
+                    
+                    
+                    // temporary
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 30)
+                            .opacity(0)
+                        
+                        Text("\(viewModel.choosedTab) 필터링")
+                            .font(.system(size: 30))
+                        
+                    }
+                }
+                
+                // lower two buttons
+                lowerView()
             }
             .padding(.bottom, 20)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-            .background(
-                    Image("back")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                )
             .edgesIgnoringSafeArea(.all)
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
+    }
+    
+    func filterbutton(filter: Filter.filter) -> some View{
+        Text(filter.content)
+            .font(.system(size: 22))
+            .padding(10)
+            .background(filter.content == viewModel.choosedTab ? Color.green : Color.white)
+            .foregroundColor(filter.content == viewModel.choosedTab ? Color.white : Color.black)
+            .cornerRadius(20)
+            .background(
+                        RoundedRectangle(cornerRadius: 40)
+                            .fill(Color.white)
+                            .shadow(color: .gray, radius: 0.5, x: 0, y: 1)
+                )
+            .onTapGesture {
+                // 수정
+                viewModel.choose(filter: filter)
+            }
     }
 }
 
