@@ -34,7 +34,7 @@ struct HamMenuView: View {
                 .background(Color.green)
                 .cornerRadius(10)
             
-            NavigationLink(destination: NextView()) {
+            NavigationLink(destination: ProfileView()) {
                 Text("마이페이지")
                     .font(.system(size: 20))
                     .foregroundColor(Color.black)

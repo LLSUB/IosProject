@@ -24,19 +24,11 @@ struct popupContentView: View {
                 Button(action:{
                     self.showingPopup = true
                 }, label:{
-//                    Text(" Tip ")
-//                        .font(.system(size: 50))
-//                        .fontWeight(.bold)
-//                        .padding()
-//                        .foregroundColor(Color.white)
-//                        .background(Color.yellow)
-//                        .cornerRadius(30)
                     Image("Tip_icon")
                         .resizable()
                         .frame(width: 80, height: 80)
                         .padding()
                         .cornerRadius(40)
-
                         .background(
                                     RoundedRectangle(cornerRadius: 40)
                                         .fill(Color.white)
