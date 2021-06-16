@@ -21,6 +21,7 @@ struct Filter{
     struct filter: Identifiable{
         var content: String
 //        var choosed: Bool = false
+//        var Array<location>
         var id: Int
     }
 }

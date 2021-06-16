@@ -12,7 +12,6 @@ class UserAuth: ObservableObject {
     @Published var isLoggedin:Bool = false
     
     func login() {
-      // login request... on success:
       self.isLoggedin = true
     }
 }

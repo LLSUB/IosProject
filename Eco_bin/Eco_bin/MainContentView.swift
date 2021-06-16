@@ -16,7 +16,7 @@ struct MainContentView: View {
             ZStack{
                 
                 // Background Map
-                MapView()
+                MapView(viewmodel: viewModel)
                 
                 // upper filter buttons
                 VStack{
@@ -40,7 +40,6 @@ struct MainContentView: View {
                         
                     }
                 }
-                
                 // lower two buttons
                 lowerView()
             }

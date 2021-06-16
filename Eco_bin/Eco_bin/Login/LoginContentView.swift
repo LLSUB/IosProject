@@ -51,7 +51,7 @@ struct LoginContentView : View {
                     }
                 HStack{
                     Text("처음이신가요?").font(.system(size: 13))
-                    NavigationLink(destination: NextView()){
+                    NavigationLink(destination: JoinContentView()){
                         Text("회원가입하기").font(.system(size: 13)).foregroundColor(Color.blue).padding()
                     }
                 }

@@ -16,10 +16,8 @@ struct TipPopupView: View {
     
     var body: some View {
         VStack(spacing: 10){
-            Text("Tip Popup")
-                .font(.system(size: 50))
-                .fontWeight(.black)
-            Spacer().frame(height:150)
+            
+            TipView(showingPopup: $showingPopup)
             
             Button(action:{
                 self.showingPopup = false

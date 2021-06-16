@@ -45,7 +45,7 @@ struct HamMenuView: View {
             .cornerRadius(30)
             .navigationBarHidden(true)
             
-            NavigationLink(destination: NextView()) {
+            NavigationLink(destination: RaffleView()) {
                 Text("당첨결과 확인하기")
                     .font(.system(size: 20))
                     .foregroundColor(Color.black)

@@ -7,4 +7,5 @@ target 'Eco_bin' do
 
   # Pods for Eco_bin
   pod 'ExytePopupView'
+  pod 'SSSwiftUIGIFView'
 end

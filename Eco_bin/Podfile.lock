@@ -1,16 +1,20 @@
 PODS:
   - ExytePopupView (0.0.14)
+  - SSSwiftUIGIFView (1.0.0)
 
 DEPENDENCIES:
   - ExytePopupView
+  - SSSwiftUIGIFView
 
 SPEC REPOS:
   trunk:
     - ExytePopupView
+    - SSSwiftUIGIFView
 
 SPEC CHECKSUMS:
   ExytePopupView: d70f0a171acfe81cc59890fa36320bbb7837003b
+  SSSwiftUIGIFView: f109262cd0baff190b58b519c0e94f7622c428d4
 
-PODFILE CHECKSUM: 4a8f9fbfb44c958ea63222a2ca33453c07a321d7
+PODFILE CHECKSUM: e675f69973060b871a28cb9f41f0e56f06b733bc
 
 COCOAPODS: 1.10.1

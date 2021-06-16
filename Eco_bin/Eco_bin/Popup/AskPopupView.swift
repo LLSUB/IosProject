@@ -16,10 +16,8 @@ struct AskPopupView: View {
 
     var body: some View {
         VStack(spacing: 10){
-            Text("Ask Popup")
-                .font(.system(size: 50))
-                .fontWeight(.black)
-            Spacer().frame(height:100)
+
+            GalleryView()
             
             HStack{
                 Button(action:{
@@ -38,7 +36,6 @@ struct AskPopupView: View {
                 Button(action:{
                     // 수정
                     self.showingAskPopup = false
-//                    self.showingHamPopup = false
                 }, label:{
                     Text("닫기")
                         .font(.system(size: 20))
@@ -46,8 +43,6 @@ struct AskPopupView: View {
                         .fontWeight(.bold)
                 })
                 .frame(width: 100, height: 40)
-                .background(Color.green)
-                .cornerRadius(20)
             }
         }
     }
