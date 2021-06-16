@@ -45,7 +45,9 @@ struct RaffleView: View {
                                 HStack{
                                     Text("당첨을 축하드립니다!!")
                                 }.padding(5)
-
+                                Image("Gift")
+                                    .resizable()
+                                    .frame(minWidth: 0, maxWidth: 200, minHeight: 0, maxHeight: 400)
                                 //or
 //                                HStack{
 //                                Text("아쉽지만 다음달에 도전해봐요!")
@@ -57,7 +59,6 @@ struct RaffleView: View {
                     }
                 }
             }
-            .frame(minWidth: 0, maxWidth: 100, minHeight: 0, maxHeight: 300)
         }
     }
     
