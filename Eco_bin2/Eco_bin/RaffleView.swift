@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SSSwiftUIGIFView
+import Firebase
 
 
 struct GradientButtonStyle: ButtonStyle {
@@ -22,10 +23,12 @@ struct GradientButtonStyle: ButtonStyle {
 
 struct RaffleView: View {
     
+    @EnvironmentObject  var  userAuth: UserAuth
+
     @State private var hasTimeElapsed = false
     @State private var hasGiftTimeElapsed = false
     @State private var isShowingRed = false
-    var isWin: Bool = true
+//    var isWin: Bool = true
     
     var body: some View {
         if !hasTimeElapsed {
@@ -47,7 +50,7 @@ struct RaffleView: View {
                     }
                     else if isShowingRed {
                         VStack(alignment: .center) {
-                            if isWin{
+                            if UserAuth.userInfo.isWin{
                                 if !hasGiftTimeElapsed{
                                     SwiftUIGIFPlayerView(gifName: "Win")
                                         .padding(.leading, 10)
@@ -62,9 +65,7 @@ struct RaffleView: View {
                                     Image("Gift")
                                         .resizable()
                                         .frame(minWidth: 0, maxWidth: 250, minHeight: 0, maxHeight: 500)
-
-                                }
-                            }
+                                }                            }
                             else{
                                 SwiftUIGIFPlayerView(gifName: "Lose")
                                     .padding(.leading, 10)

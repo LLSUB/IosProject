@@ -16,12 +16,12 @@ struct AskPopupView: View {
 
     var body: some View {
         VStack(spacing: 10){
-
+            
             GalleryView()
             
             HStack{
                 Button(action:{
-//                    self.showingAskPopup = false
+                    self.showingAskPopup = false
 //                    self.showingHamPopup = false
                 }, label:{
                     Text("문의하기")

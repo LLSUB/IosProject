@@ -37,7 +37,10 @@ class FilterViewModel: ObservableObject{
         }
     }
     
-    static var bins: Dictionary<String, [BinLocation]> = ["일반쓰레기":[BinLocation](), "배터리":[BinLocation](), "형광등":[BinLocation](), "전체":[BinLocation]()]
+    static var bins: Dictionary<String, [BinLocation]> = ["일반쓰레기":[BinLocation](),
+                                                          "배터리":[BinLocation](),
+                                                          "형광등":[BinLocation](),
+                                                          "전체":[BinLocation]()]
     
     static func loadData() {
         var data = ""
@@ -170,6 +173,13 @@ class FilterViewModel: ObservableObject{
         }
             
         bins["전체"] = bins["배터리"]! + bins["일반쓰레기"]! + bins["형광등"]!
+        
+        let curLocation = BinLocation(address: "현재 위치", content: "사용자", lat: 35.888196769223434, lng: 128.61069424265216)
+        bins["전체"]?.append(curLocation)
+        bins["배터리"]?.append(curLocation)
+        bins["일반쓰레기"]?.append(curLocation)
+        bins["형광등"]?.append(curLocation)
+        
     }
     
     static func findPosition(location: BinLocation, choosedTab: String) -> String{
@@ -179,6 +189,39 @@ class FilterViewModel: ObservableObject{
             }
         }
         return "cannot find"
+    }
+    
+    static func findContent(location: BinLocation, choosedTab: String) -> String{
+        for bin in FilterViewModel.bins[choosedTab]!{
+            if location.id == bin.id{
+                return bin.content
+            }
+        }
+        return "cannot find"
+    }
+    
+    static func findCor(location: BinLocation, choosedTab: String) -> CLLocationCoordinate2D{
+        for bin in FilterViewModel.bins[choosedTab]!{
+            if location.id == bin.id{
+                return bin.location
+            }
+        }
+        return CLLocationCoordinate2D(latitude: 35.888196769223434, longitude: 128.61069424265216)
+    }
+    
+    static func checkDistance(location: CLLocationCoordinate2D) -> Bool {
+        let userLocation = CLLocation(latitude: 35.888196769223434, longitude: 128.61069424265216)
+        let fromLocation = CLLocation(latitude: location.latitude, longitude: location.longitude)
+        
+        let dist = userLocation.distance(from: fromLocation)
+        
+        print(dist)
+        
+        if dist < 30.0 {
+            return true
+        } else {
+            return false
+        }
     }
     
     func choose(filter: Filter.filter){

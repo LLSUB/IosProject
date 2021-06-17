@@ -110,14 +110,7 @@ struct lowerView: View {
         TipPopupView(showingPopup: $showingTipPopup)
             .padding(.all, 10)
             .frame(width: 380, height: 760)
-            .background(Color.green)
-            .opacity(0.95)
+            .background(Color.white)
             .cornerRadius(30)
-    }
-}
-
-struct lowerView_Previews: PreviewProvider {
-    static var previews: some View {
-        lowerView()
     }
 }
