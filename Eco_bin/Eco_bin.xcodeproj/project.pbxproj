@@ -21,6 +21,7 @@
 		754E42B4267A4BF600297EC0 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 754E42B3267A4BF600297EC0 /* loading.gif */; };
 		754E42DD267A560000297EC0 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754E42DC267A560000297EC0 /* TipView.swift */; };
 		754E42E0267A5E1B00297EC0 /* RaffleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754E42DF267A5E1B00297EC0 /* RaffleView.swift */; };
+		754E42F9267B033700297EC0 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 754E42F8267B033700297EC0 /* data */; };
 		75DB3CD5265BF2870058A26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3CD4265BF2870058A26B /* AppDelegate.swift */; };
 		75DB3CD7265BF2870058A26B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3CD6265BF2870058A26B /* SceneDelegate.swift */; };
 		75DB3CDE265BF28A0058A26B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DB3CDD265BF28A0058A26B /* Preview Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		754E42B3267A4BF600297EC0 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		754E42DC267A560000297EC0 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		754E42DF267A5E1B00297EC0 /* RaffleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaffleView.swift; sourceTree = "<group>"; };
+		754E42F8267B033700297EC0 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
 		75DB3CD1265BF2870058A26B /* Eco_bin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eco_bin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DB3CD4265BF2870058A26B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75DB3CD6265BF2870058A26B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				75DB3CEF265BF2FC0058A26B /* NextView.swift */,
 				754E42DF267A5E1B00297EC0 /* RaffleView.swift */,
 				75DB3D45266512910058A26B /* MapView.swift */,
+				754E42F8267B033700297EC0 /* data */,
 				75DB3CF1265BF2FC0058A26B /* Base.lproj */,
 				75DB3CF0265BF2FC0058A26B /* NotUsed */,
 				75DB3CEC265BF2FC0058A26B /* Preview Content */,
@@ -267,6 +270,7 @@
 				754E42B4267A4BF600297EC0 /* loading.gif in Resources */,
 				75DB3D06265BF5330058A26B /* Assets.xcassets in Resources */,
 				75DB3CF9265BF2FC0058A26B /* NotUsed in Resources */,
+				754E42F9267B033700297EC0 /* data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

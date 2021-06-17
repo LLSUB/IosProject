@@ -30,15 +30,16 @@ struct MainContentView: View {
                     .padding(EdgeInsets(top: 60, leading: 30, bottom: 0, trailing: 0))
                     
                     
-                    // temporary
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 30)
-                            .opacity(0)
-                        
-                        Text("\(viewModel.choosedTab) 필터링")
-                            .font(.system(size: 30))
-                        
-                    }
+                    Spacer()
+//                    // temporary
+//                    ZStack{
+//                        RoundedRectangle(cornerRadius: 30)
+//                            .opacity(0)
+//
+//                        Text("\(viewModel.choosedTab) 필터링")
+//                            .font(.system(size: 30))
+//
+//                    }
                 }
                 // lower two buttons
                 lowerView()
@@ -46,6 +47,9 @@ struct MainContentView: View {
             .padding(.bottom, 20)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .edgesIgnoringSafeArea(.all)
+//            .onAppear{
+//                viewModel.loadData()
+//            }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
