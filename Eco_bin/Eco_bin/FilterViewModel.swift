@@ -170,6 +170,15 @@ class FilterViewModel: ObservableObject{
         bins["전체"] = bins["배터리"]! + bins["일반쓰레기"]!
     }
     
+    static func findPosition(location: BinLocation, choosedTab: String) -> String{
+        for bin in FilterViewModel.bins[choosedTab]!{
+            if location.id == bin.id{
+                return bin.address
+            }
+        }
+        return "cannot find"
+    }
+    
     func choose(filter: Filter.filter){
 //        choosed
         choosedTab = filter.content

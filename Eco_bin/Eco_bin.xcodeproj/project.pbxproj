@@ -22,6 +22,9 @@
 		754E42DD267A560000297EC0 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754E42DC267A560000297EC0 /* TipView.swift */; };
 		754E42E0267A5E1B00297EC0 /* RaffleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754E42DF267A5E1B00297EC0 /* RaffleView.swift */; };
 		754E42F9267B033700297EC0 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 754E42F8267B033700297EC0 /* data */; };
+		754E42FE267B319900297EC0 /* Lose.gif in Resources */ = {isa = PBXBuildFile; fileRef = 754E42FD267B319800297EC0 /* Lose.gif */; };
+		754E4304267B344E00297EC0 /* gift.gif in Resources */ = {isa = PBXBuildFile; fileRef = 754E4303267B344E00297EC0 /* gift.gif */; };
+		754E4307267B37AD00297EC0 /* Win.gif in Resources */ = {isa = PBXBuildFile; fileRef = 754E4306267B37AD00297EC0 /* Win.gif */; };
 		75DB3CD5265BF2870058A26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3CD4265BF2870058A26B /* AppDelegate.swift */; };
 		75DB3CD7265BF2870058A26B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DB3CD6265BF2870058A26B /* SceneDelegate.swift */; };
 		75DB3CDE265BF28A0058A26B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DB3CDD265BF28A0058A26B /* Preview Assets.xcassets */; };
@@ -60,6 +63,9 @@
 		754E42DC267A560000297EC0 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		754E42DF267A5E1B00297EC0 /* RaffleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaffleView.swift; sourceTree = "<group>"; };
 		754E42F8267B033700297EC0 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		754E42FD267B319800297EC0 /* Lose.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Lose.gif; sourceTree = "<group>"; };
+		754E4303267B344E00297EC0 /* gift.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gift.gif; sourceTree = "<group>"; };
+		754E4306267B37AD00297EC0 /* Win.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Win.gif; sourceTree = "<group>"; };
 		75DB3CD1265BF2870058A26B /* Eco_bin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eco_bin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DB3CD4265BF2870058A26B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75DB3CD6265BF2870058A26B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +125,17 @@
 			path = photoController;
 			sourceTree = "<group>";
 		};
+		754E4300267B31B000297EC0 /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				754E4306267B37AD00297EC0 /* Win.gif */,
+				754E42B3267A4BF600297EC0 /* loading.gif */,
+				754E42FD267B319800297EC0 /* Lose.gif */,
+				754E4303267B344E00297EC0 /* gift.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
 		75DB3CC8265BF2870058A26B = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +157,7 @@
 		75DB3CD3265BF2870058A26B /* Eco_bin */ = {
 			isa = PBXGroup;
 			children = (
+				754E4300267B31B000297EC0 /* gif */,
 				754E42752679DCF100297EC0 /* photoController */,
 				754E42562678EDE800297EC0 /* Login */,
 				75DB3D23265D2C860058A26B /* Popup */,
@@ -149,7 +167,6 @@
 				754E42532678ED9400297EC0 /* UserAuth.swift */,
 				75DB3D05265BF5330058A26B /* Assets.xcassets */,
 				75DB3D0A265BFA270058A26B /* MainContentView.swift */,
-				754E42B3267A4BF600297EC0 /* loading.gif */,
 				75DB3D13265D11A00058A26B /* FilterViewModel.swift */,
 				75DB3D16265D14100058A26B /* Filter.swift */,
 				75DB3CEE265BF2FC0058A26B /* lowerView.swift */,
@@ -265,12 +282,15 @@
 			files = (
 				75DB3CE1265BF28A0058A26B /* LaunchScreen.storyboard in Resources */,
 				75DB3CFA265BF2FC0058A26B /* Base.lproj in Resources */,
+				754E4304267B344E00297EC0 /* gift.gif in Resources */,
 				75DB3CF5265BF2FC0058A26B /* Preview Content in Resources */,
 				75DB3CDE265BF28A0058A26B /* Preview Assets.xcassets in Resources */,
 				754E42B4267A4BF600297EC0 /* loading.gif in Resources */,
+				754E42FE267B319900297EC0 /* Lose.gif in Resources */,
 				75DB3D06265BF5330058A26B /* Assets.xcassets in Resources */,
 				75DB3CF9265BF2FC0058A26B /* NotUsed in Resources */,
 				754E42F9267B033700297EC0 /* data in Resources */,
+				754E4307267B37AD00297EC0 /* Win.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
