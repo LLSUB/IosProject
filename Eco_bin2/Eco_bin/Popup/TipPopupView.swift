@@ -30,14 +30,8 @@ struct TipPopupView: View {
     
     @State var x : CGFloat = 0
     @State var count : CGFloat = 0
-    @State var screen = UIScreen.main.bounds.width - 30
+    @State var screen = UIScreen.main.bounds.width - 18
     @State var op : CGFloat = 0
-    
-    @Binding var showingPopup: Bool
-    init(showingPopup: Binding<Bool> = .constant(true)){
-        _showingPopup = showingPopup
-    }
-    
     
     @State var data = [
 
@@ -49,9 +43,12 @@ struct TipPopupView: View {
         Card(id: 4, img: "batteries", name: "폐건전지", tip: battery_tip[1], show: false),
         Card(id: 5, img: "recycling", name: "폐건전지", tip: battery_tip[2], show: false),
         //폐건전지 팁 부분
-
-
     ]
+    
+    @Binding var showingPopup: Bool
+    init(showingPopup: Binding<Bool> = .constant(true)){
+        _showingPopup = showingPopup
+    }
     
     var body : some View{
         
@@ -103,11 +100,11 @@ struct TipPopupView: View {
                                         
                                         self.count += 1
                                         
-                                        self.x = -((self.screen + 15) * self.count-2)
+                                        self.x = -((self.screen + 15) * self.count)
                                     }
                                     else{
                                         
-                                        self.x = -((self.screen + 15) * self.count-2)
+                                        self.x = -((self.screen + 15) * self.count)
                                     }
                                 }
                             })
@@ -137,7 +134,7 @@ struct TipPopupView: View {
             }
         }
     }
-    }
+}
     
     
 
@@ -169,14 +166,12 @@ struct CardView : View {
                 .padding(.top,45)
                 .padding(.bottom, 50)
                 
-            
             Text(data.tip)
                 .foregroundColor(.black)
                 .padding(.horizontal, 50)
                 .font(.system(size: 20))
                 .multilineTextAlignment(.center)
                 
-            
         }
         .frame(width: 380, height: 700)
         .background(Color.white) //card background
@@ -193,7 +188,7 @@ struct Card : Identifiable {
     var show : Bool
 }
 
-struct TipView_Previews: PreviewProvider {
+struct TipPopupView_Previews: PreviewProvider {
     static var previews: some View {
         TipPopupView()
     }
